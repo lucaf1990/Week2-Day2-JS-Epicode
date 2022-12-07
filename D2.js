@@ -16,16 +16,16 @@ REGOLE
 La tipizzazione può essere Diamica o Statica. 
 Variabile Statica rimane strettamente legata al tipo di valore assegnato 
 Variabile Dinamica ovvero nel corso della programmazione possiamo variare il dato asseganto 
-Dato Stringa 
-Dato Numerico
-Dato Booleano*/
+Dato Stringa crea sequenza parole 
+Dato Numerico inserisce in numeri
+Dato Booleano vero e falso*/
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const name = "Luca";
+let name = "Luca";
 console.log(name);
 
 /* ESERCIZIO 3
@@ -33,18 +33,15 @@ console.log(name);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let numero1 = 12;
-let numero2 = 20;
-let add = numero1 + numero2;
-console.log(add);
+let num1 = 12;
+let num2 = 20;
+console.log(num1 + num2);
 
-/* ESERCIZIO 4
- Crea una variable di nome "x" e assegna ad essa il numero 12.
-*/
-
+/* ESERCIZIO 4 Crea una variable di nome "y" e assegna ad essa il numero 12.*/
+/*
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 12;
-console.log(x);
+let y = 12;
+console.log(y);
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -53,22 +50,26 @@ console.log(x);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+name = "luca";
+
+//const dimostroChe = "la variabile Const non può essere riasseganta";
+/*dimostroChe = "Non si può modificare";
+console.log(dimostroChe); //Assignment to constant variable
+
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let minus = x - 4;
-console.log(minus);
-
+let x = 12;
+console.log(x - 4);
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
-let name1 = "jhon";
-let name2 = "Jhon";
-console.log(name1 === name2);
 
-let front = name1 === name2;
-console.log(name1 === name2.toLowerCase());
+let name4 = "john";
+let name5 = "John";
+console.log(name4 === name5);
+console.log(name4.toLowerCase() === name5.toLocaleLowerCase());
